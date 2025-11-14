@@ -1,0 +1,118 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  
+  /* Image de fond */
+  body {
+    background: url('des.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Conteneur principal du formulaire */
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    width: 330px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Titre */
+  .login-box h2 {
+    margin-bottom: 30px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Champs d'entrée */
+  .input-box {
+    position: relative;
+    margin-bottom: 25px;
+    border-bottom: 2px solid white;
+  }
+  
+  .input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #ccc;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  /* Animation du label quand on clique dans le champ */
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  /* Section Remember me / Forgot password */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .options a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bouton Login */
+  button {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ddd;
+  }
+  
+  /* Lien d'inscription */
+  .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
